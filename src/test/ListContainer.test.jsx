@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
-import App from './App.jsx';
+import ListContainer from '../component/ListContainer';
 
-describe('App', () => {
+describe('List Container', () => {
   it('render tasks', () => {
     const { container } = render((
-      <App />
+      <ListContainer />
     ));
 
     expect(container).toHaveTextContent('jest 해보기')

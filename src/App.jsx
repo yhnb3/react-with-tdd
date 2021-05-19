@@ -1,13 +1,12 @@
-import './App.css';
-import List from './List'
+import ListContainer from './component/ListContainer'
+import Input from './component/Input'
 
 function App() {
-  const tasks = [
-    {id:1, title: 'jest 해보기'},
-  ]
   return (
     <div className="App">
-      <List tasks={tasks}/>
+      <h1>Todo</h1>
+      <Input />
+      <ListContainer />
     </div>
   );
 }
