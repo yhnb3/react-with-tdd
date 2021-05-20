@@ -1,15 +1,15 @@
 import React from "react";
-// import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 export default function Input() {
-    // const dispatch = useDispatch();
-    // function addTodo(task) {
-    //     dispatch({type: 'ADD_TODO', payload: task})
-    // }
+    const dispatch = useDispatch();
+    const addTodo = (task) => {
+        dispatch({type: 'ADD_TODO', payload: task})
+    }
     return (
         <input onKeyDown={(e) => {
             if (e.key === 'Enter') {
-                console.log(e.target.value)
-                // addTodo(e.target.value)
+                addTodo(e.target.value)
+                e.target.value = ""
             }
         }}></input>
     )

@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 
 import { Provider } from 'react-redux'
 import rootReducer from './rootReducer'
-import { createStore } from 'redux'
+import { createStore} from 'redux'
+
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
