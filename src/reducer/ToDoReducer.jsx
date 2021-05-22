@@ -1,6 +1,9 @@
 const initialState = {
     id: 0,
-    tasks: []
+    tasks: [
+      {id:1, title: 'jest 해보기'},
+      {id:2, title: '그 다음엔 뭘해볼까'}
+    ]
 }
 export default function TodoReducer (state = initialState, action){
     switch (action.type) {
@@ -11,7 +14,7 @@ export default function TodoReducer (state = initialState, action){
             }
         }
         default: {
-            return {...state}
+            return state
         }
     }
 }
